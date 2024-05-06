@@ -68,25 +68,25 @@ function OnlyGrades() {
             {res !== null && (
                 <center>
                     {res >= 3 && res <= 3.5 ? (
-                        <Alert status='warning' width="40%">
+                        <Alert status='warning' width="100%">
                             <AlertIcon />
                             Llevas la materia en (<Text as='u'>{res}</Text>), puede mejorar
                         </Alert>
                     ) : (
                         res < 3 ? (
-                            <Alert status='error' width="40%">
+                            <Alert status='error' width="100%">
                                 <AlertIcon />
                                 Llevas la materia en (<Text as='u'>{res}</Text>), DEBE mejorar
                             </Alert>
                         ) : (
                             3.5 < res && res < 4 ? (
-                                <Alert status='info' width="40%">
+                                <Alert status='info' width="100%">
                                     <AlertIcon />
                                     Llevas la materia en (<Text as='u'>{res}</Text>), vas bien
                                 </Alert>
                             ):(
                                 res >= 4 ? (
-                                    <Alert status='success' width="40%">
+                                    <Alert status='success' width="100%">
                                     <AlertIcon />
                                     Llevas la materia en (<Text as='u'>{res}</Text>), tremendo
                                 </Alert>
